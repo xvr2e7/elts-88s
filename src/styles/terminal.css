@@ -1,0 +1,231 @@
+/* Import terminal fonts */
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+/* Basic terminal theme colors */
+:root {
+  --terminal-black: #121212;
+  --terminal-dark-blue: #1a1a2e;
+  --terminal-blue: #16213e;
+  --terminal-green: #50fa7b;
+  --terminal-bright-green: #5fff87;
+  --terminal-cyan: #8be9fd;
+  --terminal-amber: #ffb86c;
+  --terminal-magenta: #ff79c6;
+  --terminal-red: #ff5555;
+  --terminal-gray: #6272a4;
+  --terminal-light-gray: #f8f8f2;
+}
+
+/* Basic styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--terminal-dark-blue);
+  color: var(--terminal-light-gray);
+  font-family: "Space Mono", monospace;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Terminal window styling */
+.terminal-window {
+  background-color: var(--terminal-black);
+  border: 2px solid var(--terminal-green);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.terminal-header {
+  background-color: var(--terminal-blue);
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--terminal-green);
+}
+
+.terminal-title {
+  color: var(--terminal-green);
+  font-family: "VT323", monospace;
+  font-size: 20px;
+  margin: 0;
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.button-red {
+  background-color: var(--terminal-red);
+}
+
+.button-amber {
+  background-color: var(--terminal-amber);
+}
+
+.button-green {
+  background-color: var(--terminal-green);
+}
+
+.terminal-body {
+  padding: 20px;
+  font-family: "VT323", monospace;
+  font-size: 24px;
+  color: var(--terminal-light-gray);
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 18px;
+  background-color: var(--terminal-green);
+  animation: blink 1s step-end infinite;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/* Navigation styling */
+.nav-items {
+  margin-bottom: 20px;
+}
+
+.nav-item {
+  padding: 8px 0;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-item:hover {
+  color: var(--terminal-bright-green);
+}
+
+.nav-prefix {
+  color: var(--terminal-amber);
+  margin-right: 10px;
+}
+
+/* Terminal command input */
+.terminal-cmd {
+  margin-top: 30px;
+  border-top: 1px solid var(--terminal-gray);
+  padding-top: 15px;
+}
+
+.cmd-history {
+  color: var(--terminal-gray);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.cmd-input {
+  display: flex;
+  align-items: center;
+}
+
+.cmd-input span {
+  color: var(--terminal-green);
+  margin-right: 8px;
+}
+
+.cmd-input input {
+  background: transparent;
+  border: none;
+  color: var(--terminal-green);
+  font-family: "VT323", monospace;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+}
+
+/* Layout for content areas */
+.syllabus-layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+}
+
+/* Make responsive for mobile */
+@media (max-width: 768px) {
+  .syllabus-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Section styling */
+.section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  color: var(--terminal-bright-green);
+  font-size: 20px;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.section-title::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: var(--terminal-cyan);
+}
+
+.terminal-list {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.terminal-list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.terminal-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--terminal-amber);
+}
+
+/* Course metadata tags */
+.course-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.meta-tag {
+  background-color: var(--terminal-blue);
+  border: 1px solid var(--terminal-gray);
+  color: var(--terminal-cyan);
+  padding: 4px 8px;
+  font-family: "VT323", monospace;
+  font-size: 20px;
+}

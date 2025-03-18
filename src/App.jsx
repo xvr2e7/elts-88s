@@ -1,35 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./styles/terminal.css";
+import TerminalNav from "./components/Nav";
+import CourseInfo from "./components/CourseInfo";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [activeSection, setActiveSection] = useState("course-info");
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="container">
+      <div className="terminal-window">
+        <div className="terminal-header">
+          <p className="terminal-title">~/syllabus</p>
+          <div className="terminal-buttons">
+            <div className="terminal-button button-red"></div>
+            <div className="terminal-button button-amber"></div>
+            <div className="terminal-button button-green"></div>
+          </div>
+        </div>
+        <div className="terminal-body">
+          <h1 style={{ color: "var(--terminal-light-grey)" }}>
+            The Questions Concerning Video Game
+            <span className="cursor"></span>
+          </h1>
+          <div className="course-meta">
+            <span className="meta-tag">Spring 2025</span>
+            <span className="meta-tag">Instructor: Ziyan Xie</span>
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
+      <div className="syllabus-layout">
+        <div className="nav-column">
+          <TerminalNav setActiveSection={setActiveSection} />
+        </div>
+        <div className="content-column">
+          {activeSection === "course-info" && <CourseInfo />}
+          {/* We'll add other sections later */}
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
