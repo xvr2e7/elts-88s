@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 const WeeklySchedule = () => {
+  const [viewMode, setViewMode] = useState("full"); // "full" or "carousel"
+  const [currentWeek, setCurrentWeek] = useState(0);
+
   const weeks = [
     {
       number: 1,
@@ -137,6 +140,56 @@ const WeeklySchedule = () => {
     },
   ];
 
+  const nextWeek = () => {
+    setCurrentWeek((prev) => (prev === weeks.length - 1 ? 0 : prev + 1));
+  };
+
+  const prevWeek = () => {
+    setCurrentWeek((prev) => (prev === 0 ? weeks.length - 1 : prev - 1));
+  };
+
+  const toggleViewMode = () => {
+    setViewMode((prev) => (prev === "full" ? "carousel" : "full"));
+  };
+
+  const jumpToWeek = (weekNum) => {
+    setCurrentWeek(weekNum - 1);
+  };
+
+  const renderWeekContent = (week) => (
+    <div className="week-content">
+      <div className="content-section">
+        {week.content.map((item, index) => (
+          <p key={index} className="content-item">
+            {item}
+          </p>
+        ))}
+      </div>
+
+      {week.due && (
+        <div className="due-section">
+          <h4>Due this Week:</h4>
+          <ul className="terminal-list">
+            {week.due.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {week.homework && (
+        <div className="homework-section">
+          <h4>For Week {week.number < 10 ? week.number + 1 : "Final"}:</h4>
+          <ul className="terminal-list">
+            {week.homework.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  );
+
   return (
     <div className="terminal-window">
       <div className="terminal-header">
@@ -148,50 +201,75 @@ const WeeklySchedule = () => {
         </div>
       </div>
       <div className="terminal-body">
-        <h2 className="section-title">Weekly Schedule</h2>
+        <div className="view-mode-controls">
+          <h2 className="section-title">Weekly Schedule</h2>
+          <button
+            className="view-toggle-button"
+            onClick={toggleViewMode}
+            title={
+              viewMode === "full"
+                ? "Switch to carousel view"
+                : "Switch to full view"
+            }
+          >
+            {viewMode === "full" ? "[⊞]" : "[≡]"}
+          </button>
+        </div>
 
-        <div className="weeks-container">
-          {weeks.map((week) => (
-            <div key={week.number} className="week-item">
-              <div className="week-header">
-                <span className="week-number">Week {week.number}:</span>
-                <span className="week-title">{week.title}</span>
-              </div>
-
-              <div className="week-content">
-                <div className="content-section">
-                  {week.content.map((item, index) => (
-                    <p key={index} className="content-item">
-                      {item}
-                    </p>
+        {viewMode === "carousel" ? (
+          <div className="carousel-view">
+            <div className="carousel-navigation">
+              <button className="carousel-nav-btn" onClick={prevWeek}>
+                [--]
+              </button>
+              <div className="carousel-progress">
+                <span className="terminal-progress">
+                  [{currentWeek + 1}/{weeks.length}]
+                </span>
+                <div className="week-quick-nav">
+                  {weeks.map((week) => (
+                    <span
+                      key={week.number}
+                      className={`week-nav-item ${
+                        currentWeek + 1 === week.number ? "active" : ""
+                      }`}
+                      onClick={() => jumpToWeek(week.number)}
+                    >
+                      {week.number}
+                    </span>
                   ))}
                 </div>
+              </div>
+              <button className="carousel-nav-btn" onClick={nextWeek}>
+                [++]
+              </button>
+            </div>
 
-                {week.due && (
-                  <div className="due-section">
-                    <h4>Due this Week:</h4>
-                    <ul className="terminal-list">
-                      {week.due.map((item, index) => (
-                        <li key={index}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-
-                {week.homework && (
-                  <div className="homework-section">
-                    <h4>For Week {week.number + 1}:</h4>
-                    <ul className="terminal-list">
-                      {week.homework.map((item, index) => (
-                        <li key={index}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+            <div className="carousel-content">
+              <div className="week-item carousel-week">
+                <div className="week-header">
+                  <span className="week-number">
+                    Week {weeks[currentWeek].number}:
+                  </span>
+                  <span className="week-title">{weeks[currentWeek].title}</span>
+                </div>
+                {renderWeekContent(weeks[currentWeek])}
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ) : (
+          <div className="weeks-container">
+            {weeks.map((week) => (
+              <div key={week.number} className="week-item">
+                <div className="week-header">
+                  <span className="week-number">Week {week.number}:</span>
+                  <span className="week-title">{week.title}</span>
+                </div>
+                {renderWeekContent(week)}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
