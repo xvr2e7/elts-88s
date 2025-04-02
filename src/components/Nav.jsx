@@ -2,9 +2,7 @@ import React, { useState } from "react";
 
 const Nav = ({ setActiveSection }) => {
   const [command, setCommand] = useState("");
-  const [commandHistory, setCommandHistory] = useState([
-    "Type /help for available commands",
-  ]);
+  const [commandHistory, setCommandHistory] = useState([""]);
   const [activeItem, setActiveItem] = useState("course-info");
 
   const handleCommandSubmit = (e) => {
@@ -14,8 +12,7 @@ const Nav = ({ setActiveSection }) => {
     const cmd = command.trim().toLowerCase();
 
     if (cmd === "/help") {
-      response =
-        "Available commands: /info, /schedule, /assignments, /resources, /clear";
+      response = "Try: /info, /schedule, /assignments, /resources, /clear";
     } else if (cmd === "/info") {
       setActiveSection("course-info");
       setActiveItem("course-info");
@@ -111,7 +108,7 @@ const Nav = ({ setActiveSection }) => {
             <span>$</span>
             <input
               type="text"
-              placeholder="Enter command..."
+              placeholder="/help"
               value={command}
               onChange={(e) => setCommand(e.target.value)}
             />
