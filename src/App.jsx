@@ -10,6 +10,7 @@ import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
   const [activeSection, setActiveSection] = useState("course-info");
+  const [targetWeek, setTargetWeek] = useState(null);
 
   return (
     <ThemeProvider>
@@ -42,11 +43,16 @@ function App() {
 
         <div className="syllabus-layout">
           <div className="nav-column">
-            <TerminalNav setActiveSection={setActiveSection} />
+            <TerminalNav
+              setActiveSection={setActiveSection}
+              setTargetWeek={setTargetWeek}
+            />
           </div>
           <div className="content-column">
             {activeSection === "course-info" && <CourseInfo />}
-            {activeSection === "weekly-schedule" && <WeeklySchedule />}
+            {activeSection === "weekly-schedule" && (
+              <WeeklySchedule targetWeek={targetWeek} />
+            )}
             {activeSection === "assignments" && <Assignments />}
             {activeSection === "resources" && <Resources />}
           </div>

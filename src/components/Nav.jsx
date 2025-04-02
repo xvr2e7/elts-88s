@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Nav = ({ setActiveSection }) => {
+const Nav = ({ setActiveSection, setTargetWeek }) => {
   const [command, setCommand] = useState("");
   const [commandHistory, setCommandHistory] = useState([""]);
   const [activeItem, setActiveItem] = useState("course-info");
@@ -11,8 +11,17 @@ const Nav = ({ setActiveSection }) => {
     let response = "";
     const cmd = command.trim().toLowerCase();
 
-    if (cmd === "/help") {
-      response = "Try: /info, /schedule, /assignments, /resources, /clear";
+    // Check for week navigation command
+    const weekMatch = cmd.match(/^\/week([1-9]|10)$/);
+    if (weekMatch) {
+      const weekNumber = parseInt(weekMatch[1], 10);
+      setActiveSection("weekly-schedule");
+      setActiveItem("weekly-schedule");
+      setTargetWeek(weekNumber);
+      response = `Navigated to Week ${weekNumber}`;
+    } else if (cmd === "/help") {
+      response =
+        "Try: /info, /schedule, /assignments, /resources, /week[1-10], /clear";
     } else if (cmd === "/info") {
       setActiveSection("course-info");
       setActiveItem("course-info");
@@ -20,7 +29,8 @@ const Nav = ({ setActiveSection }) => {
     } else if (cmd === "/schedule") {
       setActiveSection("weekly-schedule");
       setActiveItem("weekly-schedule");
-      response = "Navigated to Weekly Schedule";
+      response =
+        "Navigated to Weekly Schedule \n Try /week[x] to navigate to a specific week";
     } else if (cmd === "/assignments") {
       setActiveSection("assignments");
       setActiveItem("assignments");

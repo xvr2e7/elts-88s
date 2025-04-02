@@ -1,8 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const WeeklySchedule = () => {
+const WeeklySchedule = ({ targetWeek }) => {
   const [viewMode, setViewMode] = useState("full"); // "full" or "carousel"
   const [currentWeek, setCurrentWeek] = useState(0);
+
+  // Effect to handle targetWeek changes
+  useEffect(() => {
+    if (targetWeek) {
+      setCurrentWeek(targetWeek - 1);
+
+      // If we're in full view, scroll to the correct week
+      if (viewMode === "full") {
+        setTimeout(() => {
+          const element = document.getElementById(`week-${targetWeek}`);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 100);
+      }
+    }
+  }, [targetWeek, viewMode]);
 
   const weeks = [
     {
@@ -220,12 +237,9 @@ const WeeklySchedule = () => {
           <div className="carousel-view">
             <div className="carousel-navigation">
               <button className="carousel-nav-btn" onClick={prevWeek}>
-                [--]
+                [&lt;&lt;]
               </button>
               <div className="carousel-progress">
-                <span className="terminal-progress">
-                  [{currentWeek + 1}/{weeks.length}]
-                </span>
                 <div className="week-quick-nav">
                   {weeks.map((week) => (
                     <span
@@ -241,7 +255,7 @@ const WeeklySchedule = () => {
                 </div>
               </div>
               <button className="carousel-nav-btn" onClick={nextWeek}>
-                [++]
+                [&gt;&gt;]
               </button>
             </div>
 
@@ -260,7 +274,11 @@ const WeeklySchedule = () => {
         ) : (
           <div className="weeks-container">
             {weeks.map((week) => (
-              <div key={week.number} className="week-item">
+              <div
+                id={`week-${week.number}`}
+                key={week.number}
+                className="week-item"
+              >
                 <div className="week-header">
                   <span className="week-number">Week {week.number}:</span>
                   <span className="week-title">{week.title}</span>
