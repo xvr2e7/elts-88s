@@ -342,12 +342,74 @@ body {
   margin-top: 20px;
 }
 
+/* Assignment Toggle Styles */
+.assignment-toggle {
+  display: flex;
+  margin: 20px 0;
+  gap: 15px;
+}
+
+.toggle-btn {
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  color: var(--text-primary);
+  cursor: pointer;
+  font-family: "Space Mono", monospace;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.toggle-btn:hover {
+  background-color: var(--bg-primary);
+  border-color: var(--accent-primary);
+}
+
+.toggle-btn.active {
+  background-color: var(--accent-primary);
+  color: var(--bg-secondary);
+}
+
+.toggle-icon {
+  font-family: "VT323", monospace;
+  font-size: 20px;
+}
+
+.assignment-content {
+  margin-top: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .path {
-  border: 1px solid var(--text-secondary);
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   padding: 15px;
-  background-color: rgba(22, 33, 62, 0.3);
-  transition: border-color 0.3s ease, background-color 0.3s ease;
+  background-color: var(--bg-tertiary);
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+}
+
+.path h4 {
+  color: var(--accent-tertiary);
+  font-family: "VT323", monospace;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
 }
 
 .light-theme .path {
@@ -736,5 +798,55 @@ p {
 
   .view-toggle-button {
     font-size: 22px;
+  }
+}
+
+/* Assignment Toggle Styles */
+.retro-toggle-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.retro-toggle {
+  display: flex;
+  justify-content: center;
+  font-family: "VT323", monospace;
+  font-size: 20px;
+  color: var(--text-secondary);
+}
+
+.toggle-option {
+  cursor: pointer;
+  padding: 0 10px;
+  transition: color 0.2s ease;
+}
+
+.toggle-option:hover {
+  color: var(--accent-primary);
+}
+
+.toggle-option.active {
+  color: var(--accent-tertiary);
+}
+
+.toggle-separator {
+  color: var(--text-secondary);
+  padding: 0 5px;
+}
+
+.assignment-content {
+  margin-top: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
