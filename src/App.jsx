@@ -11,7 +11,6 @@ import { ThemeProvider } from "./context/ThemeContext";
 function App() {
   const [activeSection, setActiveSection] = useState("course-info");
   const [targetWeek, setTargetWeek] = useState(null);
-  const [assignmentView, setAssignmentView] = useState("solo"); // Default to solo view
 
   return (
     <ThemeProvider>
@@ -38,7 +37,24 @@ function App() {
               <span className="meta-tag">Instructor: Ziyan Xie</span>
               <span className="meta-tag">Thursday 4:00 – 4:50 pm</span>
               <span className="meta-tag">Kaufman 101</span>
+              <a
+                href="https://bruinlearn.ucla.edu/courses/206720"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="meta-tag meta-link"
+              >
+                Course Website
+              </a>
+              <a
+                href="https://discord.gg/CAp5rMnS"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="meta-tag meta-link"
+              >
+                Discord Server
+              </a>
             </div>
+            <div className="copyright">&copy; Ziyan Xie, 2025</div>
           </div>
         </div>
 
@@ -47,7 +63,6 @@ function App() {
             <TerminalNav
               setActiveSection={setActiveSection}
               setTargetWeek={setTargetWeek}
-              setAssignmentView={setAssignmentView}
             />
           </div>
           <div className="content-column">
@@ -55,9 +70,7 @@ function App() {
             {activeSection === "weekly-schedule" && (
               <WeeklySchedule targetWeek={targetWeek} />
             )}
-            {activeSection === "assignments" && (
-              <Assignments initialView={assignmentView} />
-            )}
+            {activeSection === "assignments" && <Assignments />}
             {activeSection === "resources" && <Resources />}
           </div>
         </div>

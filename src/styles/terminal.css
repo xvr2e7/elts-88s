@@ -850,3 +850,33 @@ p {
     transform: translateY(0);
   }
 }
+
+/* Copyright text styling */
+.copyright {
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0.8;
+  transition: color 0.3s ease;
+}
+
+/* Meta link styling */
+.meta-link {
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--accent-secondary);
+  color: var(--accent-secondary);
+  padding: 4px 8px;
+  font-family: "VT323", monospace;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.meta-link:hover {
+  background-color: var(--accent-secondary);
+  color: var(--bg-secondary);
+  text-decoration: none;
+}
