@@ -11,6 +11,7 @@ import { ThemeProvider } from "./context/ThemeContext";
 function App() {
   const [activeSection, setActiveSection] = useState("course-info");
   const [targetWeek, setTargetWeek] = useState(null);
+  const [assignmentView, setAssignmentView] = useState("solo"); // Default to solo view
 
   return (
     <ThemeProvider>
@@ -46,6 +47,7 @@ function App() {
             <TerminalNav
               setActiveSection={setActiveSection}
               setTargetWeek={setTargetWeek}
+              setAssignmentView={setAssignmentView}
             />
           </div>
           <div className="content-column">
@@ -53,7 +55,9 @@ function App() {
             {activeSection === "weekly-schedule" && (
               <WeeklySchedule targetWeek={targetWeek} />
             )}
-            {activeSection === "assignments" && <Assignments />}
+            {activeSection === "assignments" && (
+              <Assignments initialView={assignmentView} />
+            )}
             {activeSection === "resources" && <Resources />}
           </div>
         </div>

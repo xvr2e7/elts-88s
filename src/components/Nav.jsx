@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Nav = ({ setActiveSection, setTargetWeek }) => {
+const Nav = ({ setActiveSection, setTargetWeek, setAssignmentView }) => {
   const [command, setCommand] = useState("");
   const [commandHistory, setCommandHistory] = useState([""]);
   const [activeItem, setActiveItem] = useState("course-info");
@@ -21,7 +21,7 @@ const Nav = ({ setActiveSection, setTargetWeek }) => {
       response = `Navigated to Week ${weekNumber}`;
     } else if (cmd === "/help") {
       response =
-        "Try: /info, /schedule, /assignments, /resources, /week[1-10], /clear";
+        "Try: /info, /schedule, /assignments, /resources, /week[1-10], /solo, /multi, /clear";
     } else if (cmd === "/info") {
       setActiveSection("course-info");
       setActiveItem("course-info");
@@ -35,6 +35,16 @@ const Nav = ({ setActiveSection, setTargetWeek }) => {
       setActiveSection("assignments");
       setActiveItem("assignments");
       response = "Navigated to Assignments";
+    } else if (cmd === "/solo") {
+      setActiveSection("assignments");
+      setActiveItem("assignments");
+      setAssignmentView("solo");
+      response = "Navigated to Solo Player Assignments";
+    } else if (cmd === "/multi") {
+      setActiveSection("assignments");
+      setActiveItem("assignments");
+      setAssignmentView("multiplayer");
+      response = "Navigated to Multiplayer Assignments";
     } else if (cmd === "/resources") {
       setActiveSection("resources");
       setActiveItem("resources");

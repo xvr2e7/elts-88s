@@ -1,7 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const Assignments = () => {
-  const [activeView, setActiveView] = useState("solo"); // Default to solo view
+const Assignments = ({ initialView }) => {
+  const [activeView, setActiveView] = useState(initialView || "solo");
+
+  // Update view when initialView prop changes (from navigation commands)
+  useEffect(() => {
+    if (initialView) {
+      setActiveView(initialView);
+    }
+  }, [initialView]);
 
   const toggleView = (view) => {
     setActiveView(view);
@@ -186,7 +193,11 @@ const Assignments = () => {
           </div>
         </div>
 
-        {/* Show shared requirements and active path content */}
+        {/* Dynamic path heading */}
+        <h3 className="path-heading">
+          {activeView === "solo" ? "Solo Player Path" : "Multiplayer Path"}
+        </h3>
+
         <div className="assignment-content">
           <SharedRequirements />
 
@@ -207,6 +218,7 @@ const Assignments = () => {
             <>
               <MultiplayerPath />
               <div className="assessment">
+                <h4>Assessment Break Down</h4>
                 <ul className="terminal-list">
                   <li>60% Active Contribution</li>
                   <li>20% Group Moodboarding</li>
