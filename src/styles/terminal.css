@@ -32,6 +32,13 @@ body {
   padding: 20px;
 }
 
+.nav-column {
+  position: sticky;
+  top: 20px;
+  align-self: start;
+  height: calc(100vh - 40px);
+}
+
 /* Terminal window styling */
 .terminal-window {
   background-color: var(--terminal-black);
@@ -82,8 +89,9 @@ body {
 
 .terminal-body {
   padding: 20px;
-  font-family: "VT323", monospace;
-  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  line-height: 1.5;
   color: var(--terminal-light-gray);
 }
 
@@ -182,10 +190,11 @@ body {
 
 .section-title {
   color: var(--terminal-bright-green);
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 15px;
   position: relative;
   padding-left: 20px;
+  font-family: "VT323", monospace;
 }
 
 .section-title::before {
@@ -227,5 +236,262 @@ body {
   color: var(--terminal-cyan);
   padding: 4px 8px;
   font-family: "VT323", monospace;
+  font-size: 18px;
+}
+
+/* Weekly Schedule Styling */
+.weeks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.week-item {
+  border-left: 2px solid var(--terminal-green);
+  padding-left: 15px;
+  transition: border-color 0.2s;
+}
+
+.week-item:hover {
+  border-left-color: var(--terminal-bright-green);
+}
+
+.week-header {
+  margin-bottom: 10px;
+}
+
+.week-number {
+  color: var(--terminal-amber);
+  font-family: "VT323", monospace;
   font-size: 20px;
+  margin-right: 10px;
+}
+
+.week-title {
+  color: var(--terminal-cyan);
+  font-weight: bold;
+}
+
+.week-content {
+  padding-left: 10px;
+}
+
+.content-item {
+  margin-bottom: 5px;
+}
+
+.due-section h4,
+.homework-section h4 {
+  color: var(--terminal-magenta);
+  font-family: "VT323", monospace;
+  font-size: 18px;
+  margin-bottom: 8px;
+  margin-top: 15px;
+}
+
+/* Assignment Styling */
+.path-options {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.path {
+  border: 1px solid var(--terminal-gray);
+  border-radius: 5px;
+  padding: 15px;
+  background-color: rgba(22, 33, 62, 0.3);
+}
+
+.path-title {
+  color: var(--terminal-cyan);
+  font-family: "VT323", monospace;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--terminal-gray);
+  padding-bottom: 8px;
+}
+
+.assignment {
+  margin-bottom: 20px;
+}
+
+.assignment h5 {
+  color: var(--terminal-amber);
+  font-family: "VT323", monospace;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.assignment-details {
+  padding-left: 15px;
+}
+
+.assignment-description {
+  color: var(--terminal-light-gray);
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.assessment-table {
+  display: flex;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.assessment-column {
+  flex: 1;
+}
+
+.assessment-column h4 {
+  color: var(--terminal-cyan);
+  font-family: "VT323", monospace;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.grading-note {
+  color: var(--terminal-amber);
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.shared-requirements {
+  margin-bottom: 30px;
+}
+
+.requirement-group {
+  margin-bottom: 15px;
+}
+
+.requirement-group h4 {
+  color: var(--terminal-amber);
+  font-family: "VT323", monospace;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Resources Styling */
+.resources-section {
+  margin-top: 20px;
+}
+
+.resource-list li {
+  margin-bottom: 15px;
+}
+
+.resource-list a {
+  color: var(--terminal-cyan);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.resource-list a:hover {
+  color: var(--terminal-bright-green);
+  text-decoration: underline;
+}
+
+.games-section {
+  margin-top: 20px;
+}
+
+.game-category {
+  margin-bottom: 20px;
+}
+
+.game-category h4 {
+  color: var(--terminal-amber);
+  font-family: "VT323", monospace;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.cost-notes,
+.access-notes {
+  margin-top: 20px;
+}
+
+.cost-notes h4 {
+  color: var(--terminal-magenta);
+  font-family: "VT323", monospace;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Policy Styling */
+.policy {
+  margin-bottom: 20px;
+}
+
+.policy h3 {
+  color: var(--terminal-amber);
+  font-family: "VT323", monospace;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Links general styling */
+a {
+  color: var(--terminal-cyan);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--terminal-bright-green);
+  text-decoration: underline;
+}
+
+/* Improved readability for course info */
+.info-content {
+  max-width: 800px;
+  line-height: 1.7;
+}
+
+.info-content p {
+  margin-bottom: 18px;
+}
+
+/* Better typography */
+h1 {
+  font-family: "VT323", monospace;
+  font-size: 32px;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "VT323", monospace;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: "VT323", monospace;
+  font-size: 22px;
+  font-weight: normal;
+  color: var(--terminal-bright-green);
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Active navigation item */
+.nav-item.active {
+  color: var(--terminal-bright-green);
+  position: relative;
+}
+
+.nav-item.active::after {
+  content: "<";
+  position: absolute;
+  right: 10px;
+  color: var(--terminal-green);
 }

@@ -1,6 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Nav = ({ setActiveSection }) => {
+  const [command, setCommand] = useState("");
+  const [commandHistory, setCommandHistory] = useState([
+    "Type /help for available commands",
+  ]);
+  const [activeItem, setActiveItem] = useState("course-info");
+
+  const handleCommandSubmit = (e) => {
+    e.preventDefault();
+
+    let response = "";
+    const cmd = command.trim().toLowerCase();
+
+    if (cmd === "/help") {
+      response =
+        "Available commands: /info, /schedule, /assignments, /resources, /clear";
+    } else if (cmd === "/info") {
+      setActiveSection("course-info");
+      setActiveItem("course-info");
+      response = "Navigated to Course Info";
+    } else if (cmd === "/schedule") {
+      setActiveSection("weekly-schedule");
+      setActiveItem("weekly-schedule");
+      response = "Navigated to Weekly Schedule";
+    } else if (cmd === "/assignments") {
+      setActiveSection("assignments");
+      setActiveItem("assignments");
+      response = "Navigated to Assignments";
+    } else if (cmd === "/resources") {
+      setActiveSection("resources");
+      setActiveItem("resources");
+      response = "Navigated to Resources";
+    } else if (cmd === "/clear") {
+      setCommandHistory([]);
+      setCommand("");
+      return;
+    } else if (cmd !== "") {
+      response = `Command not found: ${cmd}`;
+    }
+
+    if (response) {
+      setCommandHistory((prev) => [...prev, `$ ${cmd}`, response]);
+    }
+
+    setCommand("");
+  };
+
+  const handleItemClick = (section) => {
+    setActiveSection(section);
+    setActiveItem(section);
+  };
+
   return (
     <div className="terminal-window">
       <div className="terminal-header">
@@ -14,37 +65,57 @@ const Nav = ({ setActiveSection }) => {
       <div className="terminal-body">
         <div className="nav-items">
           <div
-            className="nav-item"
-            onClick={() => setActiveSection("course-info")}
+            className={`nav-item ${
+              activeItem === "course-info" ? "active" : ""
+            }`}
+            onClick={() => handleItemClick("course-info")}
           >
             <span className="nav-prefix">[01]</span> Course Info
           </div>
           <div
-            className="nav-item"
-            onClick={() => setActiveSection("weekly-schedule")}
+            className={`nav-item ${
+              activeItem === "weekly-schedule" ? "active" : ""
+            }`}
+            onClick={() => handleItemClick("weekly-schedule")}
           >
             <span className="nav-prefix">[02]</span> Weekly Schedule
           </div>
           <div
-            className="nav-item"
-            onClick={() => setActiveSection("assignments")}
+            className={`nav-item ${
+              activeItem === "assignments" ? "active" : ""
+            }`}
+            onClick={() => handleItemClick("assignments")}
           >
             <span className="nav-prefix">[03]</span> Assignments
           </div>
           <div
-            className="nav-item"
-            onClick={() => setActiveSection("resources")}
+            className={`nav-item ${activeItem === "resources" ? "active" : ""}`}
+            onClick={() => handleItemClick("resources")}
           >
             <span className="nav-prefix">[04]</span> Resources
           </div>
         </div>
 
         <div className="terminal-cmd">
-          <p className="cmd-history">Type /help for available commands</p>
-          <div className="cmd-input">
-            <span>$</span>
-            <input type="text" placeholder="Enter command..." />
+          <div className="cmd-history">
+            {commandHistory.map((line, index) => (
+              <p
+                key={index}
+                className={line.startsWith("$") ? "cmd-input-line" : ""}
+              >
+                {line}
+              </p>
+            ))}
           </div>
+          <form onSubmit={handleCommandSubmit} className="cmd-input">
+            <span>$</span>
+            <input
+              type="text"
+              placeholder="Enter command..."
+              value={command}
+              onChange={(e) => setCommand(e.target.value)}
+            />
+          </form>
         </div>
       </div>
     </div>
