@@ -21,113 +21,6 @@ const Resources = () => {
           </p>
 
           <div className="games-section">
-            <h3>Individual Game Access:</h3>
-
-            <div className="game-category">
-              <h4>Free Browser-Based Games:</h4>
-              <ul className="terminal-list">
-                <li>
-                  <a
-                    href="https://archive.org/details/msdos_Zork_I_-_The_Great_Underground_Empire_1980"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Zork I
-                  </a>{" "}
-                  (Web)
-                </li>
-                <li>
-                  <a
-                    href="https://cookieclicker.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Cookie Clicker
-                  </a>{" "}
-                  (Web)
-                </li>
-                <li>
-                  <a
-                    href="https://doors.gua-le-ni.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Doors
-                  </a>{" "}
-                  (Web)
-                </li>
-                <li>
-                  <a
-                    href="https://www.decisionproblem.com/paperclips/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Universal Paper Clips
-                  </a>{" "}
-                  (Web)
-                </li>
-              </ul>
-            </div>
-
-            <div className="game-category">
-              <h4>Steam Games (with estimated prices):</h4>
-              <ul className="terminal-list">
-                <li>
-                  <a
-                    href="https://store.steampowered.com/app/383870/Firewatch/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Firewatch
-                  </a>{" "}
-                  ($18.50)
-                </li>
-                <li>
-                  <a
-                    href="https://store.steampowered.com/app/304430/INSIDE/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Inside
-                  </a>{" "}
-                  ($18.50)
-                </li>
-                <li>
-                  <a
-                    href="https://store.steampowered.com/app/638230/Journey/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Journey
-                  </a>{" "}
-                  ($16.00)
-                </li>
-                <li>
-                  <a
-                    href="https://store.steampowered.com/app/240720/Getting_Over_It_with_Bennett_Foddy/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Getting Over It with Bennett Foddy
-                  </a>{" "}
-                  ($8.50)
-                </li>
-              </ul>
-            </div>
-
-            <div className="cost-notes">
-              <h4>Estimated Total Cost Range: $0 - $61.50</h4>
-              <ul className="terminal-list">
-                <li>
-                  $0 minimum using free browser games and library resources
-                </li>
-                <li>
-                  Up to $61.50 if purchasing all paid games on Steam (prices may
-                  vary with sales)
-                </li>
-              </ul>
-            </div>
-
             <div className="access-notes">
               <p>
                 All Steam games are PC/Mac compatible and can be accessed
@@ -154,9 +47,7 @@ const Resources = () => {
                   </a>{" "}
                   borrowing
                 </li>
-                <li>
-                  Steam family sharing (limited to 6 students, first-come basis)
-                </li>
+                <li>Steam family sharing</li>
                 <li>
                   Console versions available for borrowing from{" "}
                   <a
@@ -191,7 +82,8 @@ const Resources = () => {
                   Digital Games Research Association (DiGRA)
                 </a>
                 : The leading international organization for game studies
-                research.
+                research. Hosts annual conferences and provides extensive
+                open-access proceedings covering all aspects of games research.
               </li>
               <li>
                 <a
@@ -202,6 +94,9 @@ const Resources = () => {
                   DiGRA Digital Library
                 </a>
                 : A comprehensive repository of game studies scholarship.
+                Contains thousands of peer-reviewed papers from DiGRA
+                conferences, offering cutting-edge research on game design,
+                analysis, and theory.
               </li>
               <li>
                 <a
@@ -211,7 +106,9 @@ const Resources = () => {
                 >
                   Electronic Arts Intermix
                 </a>
-                : A major archive of experimental media art.
+                : A major archive of experimental media art. Offers unique
+                perspectives on the intersection of gaming, art, and digital
+                culture.
               </li>
               <li>
                 <a
@@ -221,7 +118,9 @@ const Resources = () => {
                 >
                   Foundations of Digital Games (FDG)
                 </a>
-                : An academic conference focusing on technical innovations.
+                : An academic conference focusing on technical innovations in
+                game development. Particularly valuable for understanding game
+                mechanics and systems.
               </li>
               <li>
                 <a
@@ -231,7 +130,9 @@ const Resources = () => {
                 >
                   Game Developers Conference (GDC)
                 </a>
-                : The game industry's premier professional event.
+                : The game industry's premier professional event. Provides
+                invaluable recorded talks from developers sharing insights on
+                game creation and analysis.
               </li>
               <li>
                 <a
@@ -242,7 +143,167 @@ const Resources = () => {
                   Game Studies
                 </a>
                 : The first peer-reviewed journal dedicated to computer games
-                research.
+                research. Features foundational articles on game theory, design,
+                and cultural impact.
+              </li>
+              <li>
+                <a
+                  href="https://journals.sagepub.com/home/gac"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Games and Culture Journal
+                </a>
+                : A leading academic publication exploring games' social and
+                cultural dimensions. Offers interdisciplinary perspectives on
+                gaming's role in contemporary society.
+              </li>
+              <li>
+                <a
+                  href="https://onlinelibrary.wiley.com/journal/2952"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  International Journal of Computer Games Technology
+                </a>
+                : Technical journal focusing on gaming innovations. Excellent
+                resource for understanding games' technological foundations.
+              </li>
+              <li>
+                <a
+                  href="https://isaga.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  International Simulation & Gaming Association (ISAGA)
+                </a>
+                : Global community of gaming professionals and researchers.
+                Provides insights into educational and training applications of
+                games.
+              </li>
+              <li>
+                <a
+                  href="https://journals.sfu.ca/loading/index.php/loading/about"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Loading…
+                </a>
+                : Canada's premier game studies journal. Offers unique
+                perspectives on gaming culture with emphasis on Canadian
+                contexts.
+              </li>
+              <li>
+                <a
+                  href="http://www.medienkunstnetz.de/themes/#theme1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Media Art Net
+                </a>
+                : Extensive database of digital art and new media. Valuable for
+                understanding games as artistic medium.
+              </li>
+              <li>
+                <a
+                  href="https://gamelab.mit.edu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  MIT Game Lab
+                </a>
+                : Leading research center for game design and development.
+                Offers innovative perspectives on gaming's future through
+                research projects and publications.
+              </li>
+              <li>
+                <a
+                  href="https://monoskop.org/Monoskop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Monoskop
+                </a>
+                : Digital arts and media culture archive. Provides historical
+                context for understanding games within broader media landscape.
+              </li>
+              <li>
+                <a
+                  href="https://gamecenter.nyu.edu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  NYU Game Center
+                </a>
+                : Major academic hub for game design education. Shares lectures,
+                exhibitions, and student work exploring gaming's creative
+                possibilities.
+              </li>
+              <li>
+                <a
+                  href="https://press-start.gla.ac.uk/index.php/press-start"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Press Start
+                </a>
+                : Student-focused game studies journal. Perfect for seeing how
+                other students approach game analysis and criticism.
+              </li>
+              <li>
+                <a
+                  href="https://artbase.rhizome.org/wiki/Main_Page"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Rhizome ArtBase
+                </a>
+                : Digital art archive emphasizing experimental works. Shows how
+                games intersect with contemporary art practices.
+              </li>
+              <li>
+                <a
+                  href="http://www.nickyee.com/daedalus/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  The Daedalus Project
+                </a>
+                : Extensive quantitative database on game and MMO usage.
+              </li>
+              <li>
+                <a
+                  href="https://todigra.org/index.php/todigra"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Transactions of the Digital Games Research Association
+                  (ToDiGRA)
+                </a>
+                : An international, open access journal dedicated to research on
+                and practice in all aspects of games.
+              </li>
+              <li>
+                <a
+                  href="https://games.ucla.edu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  UCLA Game Lab
+                </a>
+                : Experimental game design research center. Explores innovative
+                approaches to game creation and analysis.
+              </li>
+              <li>
+                <a
+                  href="https://wholeearth.info/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Whole Earth Catalogs
+                </a>
+                : Historical archive of countercultural technology writing.
+                Provides fascinating context for gaming's cultural evolution.
               </li>
             </ul>
 
@@ -256,7 +317,8 @@ const Resources = () => {
                 >
                   Critical Distance
                 </a>
-                : Curates the best in games criticism and analysis.
+                : Curates the best in games criticism and analysis. Weekly
+                roundups of thoughtful writing about games from across the web.
               </li>
               <li>
                 <a
@@ -266,7 +328,8 @@ const Resources = () => {
                 >
                   First Person Scholar
                 </a>
-                : Academic blog focusing on game studies.
+                : Academic blog focusing on game studies. Bridges gap between
+                academic and popular game criticism.
               </li>
               <li>
                 <a
@@ -276,7 +339,9 @@ const Resources = () => {
                 >
                   Game Developer
                 </a>
-                : Leading industry news and analysis site.
+                : Leading industry news and analysis site. Offers
+                behind-the-scenes insights into game creation and design
+                decisions.
               </li>
               <li>
                 <a
@@ -286,7 +351,9 @@ const Resources = () => {
                 >
                   Jacob Geller's Tips for Making Video Essays About Video Games
                 </a>
-                : Practical guide for creating video essays.
+                : Practical guide for creating compelling video essays about
+                games. Essential resource if you're choosing the video format
+                for assignments.
               </li>
               <li>
                 <a
@@ -296,7 +363,8 @@ const Resources = () => {
                 >
                   Rock Paper Shotgun
                 </a>
-                : In-depth games journalism and criticism.
+                : In-depth games journalism and criticism. Known for thoughtful
+                analysis of games' cultural and artistic significance.
               </li>
               <li>
                 <a
@@ -306,7 +374,19 @@ const Resources = () => {
                 >
                   Play the Past
                 </a>
-                : Explores historical gaming and history in games.
+                : Explores historical gaming and history in games. Valuable for
+                understanding how games engage with the past.
+              </li>
+              <li>
+                <a
+                  href="https://www.polygon.com/features"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Polygon's Feature
+                </a>
+                : Long-form games journalism and criticism. Offers sophisticated
+                analysis of gaming culture and industry.
               </li>
             </ul>
           </div>

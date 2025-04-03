@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 const Assignments = ({ initialView }) => {
   const [activeView, setActiveView] = useState(initialView || "solo");
 
-  // Update view when initialView prop changes (from navigation commands)
   useEffect(() => {
     if (initialView) {
       setActiveView(initialView);
@@ -14,16 +13,22 @@ const Assignments = ({ initialView }) => {
     setActiveView(view);
   };
 
-  // Common shared requirements to be displayed in both views
   const SharedRequirements = () => (
     <div className="shared-requirements">
       <div className="requirement-group">
         <h4>Active Contribution</h4>
         <ul className="terminal-list">
           <li>Regular attendance and participation in class discussions</li>
-          <li>Demonstrated engagement with assigned readings and games</li>
           <li>
-            Thoughtful contributions in collective analyses and discussions
+            Before each session meeting:
+            <ul className="terminal-list nested-list">
+              <li>One-sentence comment on the assigned game</li>
+              <li>One thoughtful question about the assigned reading</li>
+              <li>
+                Post both to <code>#hot-takes</code> in Discord
+              </li>
+              <li>React to your peers' comments with comments or emojis</li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -82,7 +87,6 @@ const Assignments = ({ initialView }) => {
           <ul className="terminal-list">
             <li>Revise your three game logs into a cohesive portfolio</li>
             <li>Add a 200-word introduction (or 1-2 minute video intro)</li>
-            <li>Reflect on your evolution as a thoughtful player</li>
             <li>Discuss how your understanding of games has evolved</li>
             <li>Identify key assumptions challenged and perspectives gained</li>
           </ul>
@@ -99,7 +103,7 @@ const Assignments = ({ initialView }) => {
         <div className="assignment-details">
           <p className="assignment-description">Team Formation:</p>
           <ul className="terminal-list">
-            <li>Groups of 3-5 players</li>
+            <li>Groups of 2-4 players</li>
           </ul>
 
           <p className="assignment-description">Submission Schedule:</p>

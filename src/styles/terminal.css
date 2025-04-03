@@ -880,3 +880,51 @@ p {
   color: var(--bg-secondary);
   text-decoration: none;
 }
+
+.more-resources-section h4 {
+  color: var(--accent-secondary);
+  font-family: "VT323", monospace;
+  font-size: 18px;
+  margin-bottom: 8px;
+  margin-top: 15px;
+  transition: color 0.3s ease;
+}
+
+.more-resources-section .resource-list li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.more-resources-section .resource-list li::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: var(--accent-secondary);
+  transition: color 0.3s ease;
+}
+
+/* Resource link styling */
+.resource-link {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.resource-link:hover {
+  color: var(--hover-color);
+  text-decoration: none;
+}
+
+.nested-list {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.nested-list li {
+  margin-bottom: 6px;
+}
+
+.nested-list li:last-child {
+  margin-bottom: 0;
+}

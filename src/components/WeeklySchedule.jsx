@@ -30,8 +30,44 @@ const WeeklySchedule = ({ targetWeek }) => {
         "History of video games. History of ludology and game studies.",
       ],
       homework: [
-        'Read: Huizinga, "Nature and Significance of Play" in Homo Ludens (1938)',
-        "Play: Zork I: The Great Underground Empire (1980).",
+        {
+          prefix: "Read:",
+          title:
+            'Huizinga, "Nature and Significance of Play" in Homo Ludens (1938)',
+        },
+        {
+          prefix: "Play: ",
+          title: "Zork I: The Great Underground Empire (1980)",
+          url: "https://archive.org/details/msdos_Zork_I_-_The_Great_Underground_Empire_1980",
+        },
+      ],
+      moreResources: [
+        {
+          title:
+            'Aarseth, Espen, and Gordon Calleja. "The Word Game: The Ontology of an Indefinable Object".',
+          url: "https://www.researchgate.net/publication/348558275_The_Word_Game_The_ontology_of_an_indefinable_object",
+        },
+        {
+          title: 'Bogost, Ian. "Videogames are a Mess".',
+          url: "https://bogost.com/writing/videogames_are_a_mess/",
+        },
+        {
+          title:
+            "Caillois, Roger, and Meyer Barash (2001). Man, Play, and Games.",
+        },
+        {
+          title:
+            "Payne, Matthew Thomas, and Nina B. Huntemann (2019) How to Play Video Games.",
+          url: "http://www.jstor.org/stable/j.ctv12fw8tn",
+        },
+        {
+          title: "Pias, Claus (2017). Computer Game Worlds.",
+          url: "https://press.uchicago.edu/ucp/books/book/distributed/C/bo27470707.html",
+        },
+        {
+          title: "Internet Archive's Classic Game Collection",
+          url: "https://archive.org/details/classicpcgames",
+        },
       ],
     },
     {
@@ -42,9 +78,39 @@ const WeeklySchedule = ({ targetWeek }) => {
         "Text-based adventure game. Aspect ratio. Simulated depth. Decision space.",
       ],
       homework: [
-        "Watch: Farocki, Serious Games I-IV (2009-2010)",
-        "Watch: Dancin - GTA V Military Crew",
-        "View: Gerrard, Exercise (Djibouti) (2012)",
+        {
+          prefix: "View:",
+          title: "Farocki, Serious Games I-IV (2009-2010)",
+          url: "https://www.harunfarocki.de/installations/2010s/2010/serious-games-i-watson-is-down.html",
+        },
+        {
+          prefix: "Watch: ",
+          title: "Dancin - GTA V Military Crew",
+          url: "https://www.youtube.com/watch?v=chhlAV01_y4",
+        },
+        {
+          prefix: "View:",
+          title: "Gerrard, Exercise (Djibouti) (2012)",
+          url: "https://www.johngerrard.net/exercise-djibouti.html",
+        },
+      ],
+      moreResources: [
+        {
+          title: "Emily Short's blog about interactive fiction",
+          url: "https://emshort.blog/",
+        },
+        {
+          title: "'A Dark Room' (2013)",
+          url: "https://adarkroom.doublespeakgames.com/",
+        },
+        {
+          title: "'Colossal Cave Adventure' (1976)",
+          url: "https://www.amc.com/blogs/colossal-cave-adventure-the-text-game-that-started-it-all--4618",
+        },
+        {
+          title: "Twine (try if you want to create your own text adventures)",
+          url: "https://twinery.org/",
+        },
       ],
     },
     {
@@ -56,9 +122,18 @@ const WeeklySchedule = ({ targetWeek }) => {
       ],
       due: ["Solo Path: Game Log Entry 1"],
       homework: [
-        'Read: Brecht, "A Short Organum for the Theatre"',
-        "Play: Firewatch (2016)",
+        {
+          prefix: "Read: ",
+          title:
+            'Brecht, "A Short Organum for the Theatre" in Brecht on Theatre (1966)',
+        },
+        {
+          prefix: "Play: ",
+          title: "Firewatch (2016)",
+          url: "https://store.steampowered.com/app/383870/Firewatch/",
+        },
       ],
+      moreResources: [],
     },
     {
       number: 4,
@@ -69,9 +144,38 @@ const WeeklySchedule = ({ targetWeek }) => {
       ],
       due: ["Multiplayer Path: Moodboard Presentation 1"],
       homework: [
-        'Read: Aarseth, "Doors and Perception" (2007)',
-        "Play: Doors (2021)",
-        'View: UCLA LENS, "Grand Theft Eco" (2024)',
+        {
+          prefix: "Read: ",
+          title: 'Aarseth, "Doors and Perception" (2007)',
+        },
+        {
+          prefix: "Play: ",
+          title: "Doors (2021)",
+          url: "https://doors.gua-le-ni.com/",
+        },
+        {
+          prefix: "View:",
+          title: 'UCLA LENS, "Grand Theft Eco" (2024)',
+          url: "https://www.ioes.ucla.edu/project/grand-theft-eco/",
+        },
+      ],
+      moreResources: [
+        // {
+        //   title: "'Dear Esther' (2012)",
+        //   url: "https://store.steampowered.com/app/203810/Dear_Esther/",
+        // },
+        // {
+        //   title: "'Gone Home' (2013)",
+        //   url: "https://store.steampowered.com/app/232430/Gone_Home/",
+        // },
+        // {
+        //   title: "'Proteus' (2013)",
+        //   url: "https://twistedtree.itch.io/proteus",
+        // },
+        // {
+        //   title: "'What Remains of Edith Finch'(2017)",
+        //   url: "https://store.steampowered.com/app/501300/What_Remains_of_Edith_Finch/",
+        // },
       ],
     },
     {
@@ -82,8 +186,20 @@ const WeeklySchedule = ({ targetWeek }) => {
         "Technological enframing. Machinima. Mixed reality overlay.",
       ],
       homework: [
-        'Read: Adorno, "Commitment" (1962)',
-        "View: Brand, Spacewar! in Rolling Stone (1972)",
+        {
+          prefix: "Read: ",
+          title: 'Adorno, "Commitment" (1962)',
+        },
+        {
+          prefix: "View: ",
+          title: "Brand, Spacewar! in Rolling Stone (1972)",
+        },
+      ],
+      moreResources: [
+        // {
+        //   title: "'The Stanley Parable' (2013)",
+        //   url: "https://store.steampowered.com/app/221910/The_Stanley_Parable/",
+        // },
       ],
     },
     {
@@ -98,8 +214,25 @@ const WeeklySchedule = ({ targetWeek }) => {
         "Multiplayer Path: Moodboard Presentation 2",
       ],
       homework: [
-        'Reading: Deleuze, "Postscript on the Societies of Control" (1992)',
-        "Play: Cookie Clicker (2013)",
+        {
+          prefix: "Reading:",
+          title: 'Deleuze, "Postscript on the Societies of Control" (1992)',
+        },
+        {
+          prefix: "Play:",
+          title: "Cookie Clicker (2013)",
+          url: "https://cookieclicker.com/",
+        },
+      ],
+      moreResources: [
+        // {
+        //   title: "'Papers, Please' (2013) or 'This War of Mine' (2014)",
+        //   url: "https://store.steampowered.com/app/239030/Papers_Please/",
+        // },
+        // {
+        //   title: "Galloway, 'Gaming: Essays on Algorithmic Culture'",
+        //   url: "https://www.upress.umn.edu/book-division/books/gaming",
+        // },
       ],
     },
     {
@@ -110,9 +243,39 @@ const WeeklySchedule = ({ targetWeek }) => {
         "Idle/Self-playing games. Computational spectatorship.",
       ],
       homework: [
-        'Read: von Uexküll, "A Stroll Through the Worlds of Animals and Men" (1934)',
-        "Play: Journey (2012).",
-        "Watch: Chen's GDC Talk – Designing Journey (2013)",
+        {
+          prefix: "Read:",
+          title:
+            'von Uexküll, "A Stroll Through the Worlds of Animals and Men" (1934)',
+        },
+        {
+          prefix: "Play:",
+          title: "Journey (2012).",
+          url: "https://store.steampowered.com/app/638230/Journey/",
+        },
+        {
+          prefix: "Watch:",
+          title: "Chen's GDC Talk – Designing Journey (2013)",
+          url: "https://archive.org/details/GDC2013Chen",
+        },
+      ],
+      moreResources: [
+        // {
+        //   title: "'Progress Quest' or 'Kittens Game' (idle games)",
+        //   url: "https://kittensgame.com/web/",
+        // },
+        // {
+        //   title: "Sianne Ngai on 'Stuplimity'",
+        //   url: "https://content.ucpress.edu/chapters/10810.ch01.pdf",
+        // },
+        // {
+        //   title: "Conway's Game of Life simulations",
+        //   url: "https://conwaylife.com/",
+        // },
+        // {
+        //   title: "AI art generators and computational creativity",
+        //   url: "https://makeavideo.studio/",
+        // },
       ],
     },
     {
@@ -124,8 +287,29 @@ const WeeklySchedule = ({ targetWeek }) => {
       ],
       due: ["Multiplayer Path: Moodboard Presentation 3"],
       homework: [
-        'Read: Virilio, "Speed and Politics: An Essay on Dromology" (1986).',
-        "Play: Getting Over It with Bennett Foddy (2017)",
+        {
+          prefix: "Read:",
+          title: 'Virilio, "Speed and Politics: An Essay on Dromology" (1986)',
+        },
+        {
+          prefix: "Play:",
+          title: "Getting Over It with Bennett Foddy (2017)",
+          url: "https://store.steampowered.com/app/240720/Getting_Over_It_with_Bennett_Foddy/",
+        },
+      ],
+      moreResources: [
+        // {
+        //   title: "'Abzû' (2016) or 'Flower' (2009)",
+        //   url: "https://store.steampowered.com/app/384190/ABZU/",
+        // },
+        // {
+        //   title: "Jane Bennett, 'Vibrant Matter' (excerpts)",
+        //   url: "https://www.dukeupress.edu/vibrant-matter",
+        // },
+        // {
+        //   title: "'Sky: Children of the Light'",
+        //   url: "https://thatgamecompany.com/sky/",
+        // },
       ],
     },
     {
@@ -140,7 +324,24 @@ const WeeklySchedule = ({ targetWeek }) => {
         "Multiplayer Path: Final Presentation (Part 1)",
       ],
       homework: [
-        'Read: Heidegger, "The Question Concerning Technology" (1954)',
+        {
+          prefix: "Read:",
+          title: 'Heidegger, "The Question Concerning Technology" (1954)',
+        },
+      ],
+      moreResources: [
+        // {
+        //   title: "GDQ (Games Done Quick) speedrun events",
+        //   url: "https://gamesdonequick.com/",
+        // },
+        // {
+        //   title: "'Super Hexagon' or other reflex-focused games",
+        //   url: "https://store.steampowered.com/app/221640/Super_Hexagon/",
+        // },
+        // {
+        //   title: "TAS (Tool-Assisted Speedrun) videos and communities",
+        //   url: "https://tasvideos.org/",
+        // },
       ],
     },
     {
@@ -153,6 +354,20 @@ const WeeklySchedule = ({ targetWeek }) => {
       due: [
         "Multiplayer Path: Final Presentation (Part 2)",
         "Solo Path: Gamer Portfolio",
+      ],
+      moreResources: [
+        // {
+        //   title: "'Undertale' (2015) or 'Outer Wilds' (2019)",
+        //   url: "https://store.steampowered.com/app/391540/Undertale/",
+        // },
+        // {
+        //   title: "Carse, 'Finite and Infinite Games'",
+        //   url: "https://www.simonandschuster.com/books/Finite-and-Infinite-Games/James-Carse/9781476731711",
+        // },
+        // {
+        //   title: "'No Man's Sky'",
+        //   url: "https://www.nomanssky.com/",
+        // },
       ],
     },
   ];
@@ -199,7 +414,45 @@ const WeeklySchedule = ({ targetWeek }) => {
           <h4>For Week {week.number < 10 ? week.number + 1 : "Final"}:</h4>
           <ul className="terminal-list">
             {week.homework.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li key={index}>
+                <span className="homework-prefix">{item.prefix}</span>{" "}
+                {item.url ? (
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="homework-title"
+                  >
+                    {item.title}
+                  </a>
+                ) : (
+                  item.title
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {week.moreResources && (
+        <div className="more-resources-section">
+          <h4>More:</h4>
+          <ul className="terminal-list resource-list">
+            {week.moreResources.map((item, index) => (
+              <li key={index}>
+                {item.url ? (
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="resource-link"
+                  >
+                    {item.title}
+                  </a>
+                ) : (
+                  item.title
+                )}
+              </li>
             ))}
           </ul>
         </div>

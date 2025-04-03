@@ -16,18 +16,18 @@ const CourseInfo = () => {
           <h2 className="section-title">Course Description</h2>
           <p>
             Video games shape meaning and modulate affect. We watch them. We
-            read them. And above all, we play them. Drawing on European critical
-            theory and philosophy, this seminar examines video games as a space
-            for transcultural dialogue and critical inquiry.
+            read them. And above all, we play them. Drawing on theory and
+            history of media, this seminar examines video games as a space for
+            transcultural dialogue and critical inquiry.
           </p>
           <p>
             Through a series of radical questions, we will strip away what is
             considered essential to gaming. Can we play with only text, as in
             early computer interfaces? Can simulated military training become
             dance? Can walking itself become resistance? Week by week, we will
-            move through different modes of play—textual, embodied, automated,
-            silent—to uncover how digital media generates new possibilities for
-            being and relating across boundaries.
+            move through different modes of play&mdash;textual, embodied,
+            automated, silent&mdash;to uncover how digital media generates new
+            possibilities for being and relating across boundaries.
           </p>
           <p>
             Moving from early text adventures to contemporary experiments, we
@@ -40,8 +40,8 @@ const CourseInfo = () => {
           <p>
             Like any good game, this seminar rewards curiosity and
             experimentation. All materials and discussion will be in English. No
-            prior gaming experience required—just bring your willingness to
-            play, think, and question.
+            prior gaming experience required&mdash;just bring your willingness
+            to play, think, and question.
           </p>
         </div>
 
@@ -52,17 +52,20 @@ const CourseInfo = () => {
             <a href="mailto:ziyanx@g.ucla.edu">Email</a>)
           </p>
           <p>
-            Seminar Hour: <strong>Thursday 4:00 – 4:50 pm</strong>,{" "}
-            <strong>Kaufman 101</strong>
+            <strong>Seminar Hour</strong>: Thursday 4:00 &mdash; 4:50 pm,
+            Kaufman 101
           </p>
-          <p>Office Hour: TBA</p>
+          <p>
+            <strong>Office Hour</strong>: Tuesday 2:00 &mdash; 3:00 pm (Discord)
+            or by appointment
+          </p>
         </div>
 
         <div className="section">
           <h2 className="section-title">Learning Outcomes</h2>
           <p>
-            By the end of this seminar, fellow learners and gamers can expect to
-            be able to:
+            By the end of this seminar, fellow learners and players can expect
+            to be able to:
           </p>
           <ul className="terminal-list">
             <li>
@@ -78,8 +81,8 @@ const CourseInfo = () => {
               identity and embodiment.
             </li>
             <li>
-              Develop original perspectives on gaming's role and influence in
-              contemporary culture.
+              Develop original perspectives on digital gaming's role and
+              influence in contemporary culture.
             </li>
             <li>
               Contribute critical insights to broader conversations about
@@ -96,7 +99,7 @@ const CourseInfo = () => {
             <p>
               I recognize that life can be challenging and unexpected events
               happen. If you anticipate difficulty meeting a deadline, please
-              communicate with me in advance – we can work together to find a
+              communicate with me in advance. We can work together to find a
               solution and ensure you stay on track with your learning journey.
               Good communication is key.
             </p>
@@ -132,23 +135,23 @@ const CourseInfo = () => {
             <h3>Community Expectations</h3>
             <ul className="terminal-list">
               <li>
-                <strong>Be Respectful</strong> – Expand your perspectives by
+                <strong>Be Respectful</strong>: Expand your perspectives by
                 actively listening to others when they speak.
               </li>
               <li>
-                <strong>Be Engaged</strong> – Come to discussions prepared by
+                <strong>Be Engaged</strong>: Come to discussions prepared by
                 playing games and/or completing readings.
               </li>
               <li>
-                <strong>Be Playful</strong> – Let go of any utilitarian mindset
+                <strong>Be Playful</strong>: Let go of any utilitarian mindset
                 before launching your game. Enjoy the game.
               </li>
               <li>
-                <strong>Be Critical</strong> – Grapple with challenging ideas
-                and thoughtfully consider them repeatedly.
+                <strong>Be Critical</strong>: Grapple with challenging ideas and
+                thoughtfully consider them repeatedly.
               </li>
               <li>
-                <strong>Be Creative</strong> – Embrace all possibilities while
+                <strong>Be Creative</strong>: Embrace all possibilities while
                 thinking. Explore every possible "what-if"s.
               </li>
             </ul>
