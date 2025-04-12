@@ -80,13 +80,8 @@ const WeeklySchedule = ({ targetWeek }) => {
       homework: [
         {
           prefix: "View:",
-          title: "Farocki, Serious Games I-IV (2009-2010)",
-          url: "https://www.harunfarocki.de/installations/2010s/2010/serious-games-i-watson-is-down.html",
-        },
-        {
-          prefix: "Watch: ",
-          title: "Dancin - GTA V Military Crew",
-          url: "https://www.youtube.com/watch?v=chhlAV01_y4",
+          title: "Farocki, Serious Games I-IV (2009)",
+          url: "https://vimeo.com/370494311",
         },
         {
           prefix: "View:",
@@ -133,7 +128,25 @@ const WeeklySchedule = ({ targetWeek }) => {
           url: "https://store.steampowered.com/app/383870/Firewatch/",
         },
       ],
-      moreResources: [],
+      moreResources: [
+        {
+          title:
+            "Crogan, Patrick (2011). Gameplay Mode: War, Simulation, and Technoculture.",
+          url: "https://www.jstor.org/stable/10.5749/j.ctttv857",
+        },
+        {
+          title:
+            "Huntemann and Payne (2010). Joystick Soldier: The Politics of Play in Military Video Games.",
+        },
+        {
+          title:
+            "Kocurek, Carly (2015). Coin-Operated Americans: Rebooting Boyhood at the Video Game Arcade.",
+          url: "https://www.jstor.org/stable/10.5749/j.ctttv857",
+        },
+        {
+          title: "Laskar and Parkes' WarGames (1983)",
+        },
+      ],
     },
     {
       number: 4,

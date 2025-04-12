@@ -59,7 +59,7 @@ const Assignments = ({ initialView }) => {
             Format Options (Choose 1 only):
           </p>
           <ul className="terminal-list">
-            <li>Written: 150-250 word blog entries</li>
+            <li>Written: 200-300 word blog entries</li>
             <li>Video: 1-2 minute video essays</li>
           </ul>
 
