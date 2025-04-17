@@ -33,7 +33,7 @@ const WeeklySchedule = ({ targetWeek }) => {
         {
           prefix: "Read:",
           title:
-            'Huizinga, "Nature and Significance of Play" in Homo Ludens (1938)',
+            'Huizinga, "Nature and Significance of Play as a Cultural Phenomenon"',
         },
         {
           prefix: "Play: ",
@@ -52,16 +52,15 @@ const WeeklySchedule = ({ targetWeek }) => {
           url: "https://bogost.com/writing/videogames_are_a_mess/",
         },
         {
-          title:
-            "Caillois, Roger, and Meyer Barash (2001). Man, Play, and Games.",
+          title: "Caillois, Roger, and Meyer Barash. Man, Play, and Games.",
         },
         {
           title:
-            "Payne, Matthew Thomas, and Nina B. Huntemann (2019) How to Play Video Games.",
+            "Payne, Matthew Thomas, and Nina B. Huntemann. How to Play Video Games.",
           url: "http://www.jstor.org/stable/j.ctv12fw8tn",
         },
         {
-          title: "Pias, Claus (2017). Computer Game Worlds.",
+          title: "Pias, Claus. Computer Game Worlds.",
           url: "https://press.uchicago.edu/ucp/books/book/distributed/C/bo27470707.html",
         },
         {
@@ -74,18 +73,18 @@ const WeeklySchedule = ({ targetWeek }) => {
       number: 2,
       title: "Textual Play – Can we play with (only) text?",
       content: [
-        "Circa-1980 teletype interface. Vector display. Distant playing.",
-        "Text-based adventure game. Aspect ratio. Simulated depth. Decision space.",
+        "Interactive Fiction. Text-based adventure game.",
+        "Formal characteristics of play. Limitedness. Magic Circle.",
       ],
       homework: [
         {
           prefix: "View:",
-          title: "Farocki, Serious Games I-IV (2009)",
+          title: 'Farocki, "Serious Games I-IV" (2010)',
           url: "https://vimeo.com/370494311",
         },
         {
           prefix: "View:",
-          title: "Gerrard, Exercise (Djibouti) (2012)",
+          title: 'Gerrard, "Exercise (Djibouti)" (2015)',
           url: "https://www.johngerrard.net/exercise-djibouti.html",
         },
       ],
@@ -115,12 +114,14 @@ const WeeklySchedule = ({ targetWeek }) => {
         "Military simulation. Choreographed Violence. Hypermasculinity.",
         "Gesture interface. Ludic body. Heterogeneity.",
       ],
-      due: ["Solo Path: Game Log Entry 1"],
+      due: [
+        "Solo Path: Game Log Entry 1",
+        "Multi Path: Moodboard Submission 1",
+      ],
       homework: [
         {
           prefix: "Read: ",
-          title:
-            'Brecht, "A Short Organum for the Theatre" in Brecht on Theatre (1966)',
+          title: 'Butler, "Performative Acts and Gender Constitution"',
         },
         {
           prefix: "Play: ",
@@ -131,16 +132,16 @@ const WeeklySchedule = ({ targetWeek }) => {
       moreResources: [
         {
           title:
-            "Crogan, Patrick (2011). Gameplay Mode: War, Simulation, and Technoculture.",
+            "Crogan, Patrick. Gameplay Mode: War, Simulation, and Technoculture.",
           url: "https://www.jstor.org/stable/10.5749/j.ctttv857",
         },
         {
           title:
-            "Huntemann and Payne (2010). Joystick Soldier: The Politics of Play in Military Video Games.",
+            "Huntemann and Payne. Joystick Soldier: The Politics of Play in Military Video Games.",
         },
         {
           title:
-            "Kocurek, Carly (2015). Coin-Operated Americans: Rebooting Boyhood at the Video Game Arcade.",
+            "Kocurek, Carly. Coin-Operated Americans: Rebooting Boyhood at the Video Game Arcade.",
           url: "https://www.jstor.org/stable/10.5749/j.ctttv857",
         },
         {
@@ -152,24 +153,19 @@ const WeeklySchedule = ({ targetWeek }) => {
       number: 4,
       title: "Embodied Play – Can we play with walking?",
       content: [
-        "Procedural Poetics. Defamiliarization.",
+        "Non-game/Anti-game. Procedural Poetics.",
         "Walking simulator. Walkie-talkie. Feminized Labor.",
       ],
       due: ["Multiplayer Path: Moodboard Presentation 1"],
       homework: [
         {
           prefix: "Read: ",
-          title: 'Aarseth, "Doors and Perception" (2007)',
+          title: 'Aarseth, "Doors and Perception"',
         },
         {
           prefix: "Play: ",
           title: "Doors (2021)",
           url: "https://doors.gua-le-ni.com/",
-        },
-        {
-          prefix: "View:",
-          title: 'UCLA LENS, "Grand Theft Eco" (2024)',
-          url: "https://www.ioes.ucla.edu/project/grand-theft-eco/",
         },
       ],
       moreResources: [
@@ -201,11 +197,12 @@ const WeeklySchedule = ({ targetWeek }) => {
       homework: [
         {
           prefix: "Read: ",
-          title: 'Adorno, "Commitment" (1962)',
+          title: "Brand, Spacewar! in Rolling Stone (1972)",
         },
         {
-          prefix: "View: ",
-          title: "Brand, Spacewar! in Rolling Stone (1972)",
+          prefix: "Play: ",
+          title: "Inside (2016)",
+          url: "https://store.steampowered.com/app/304430/INSIDE/",
         },
       ],
       moreResources: [
@@ -229,7 +226,7 @@ const WeeklySchedule = ({ targetWeek }) => {
       homework: [
         {
           prefix: "Reading:",
-          title: 'Deleuze, "Postscript on the Societies of Control" (1992)',
+          title: 'Deleuze, "Postscript on the Societies of Control"',
         },
         {
           prefix: "Play:",
@@ -258,8 +255,7 @@ const WeeklySchedule = ({ targetWeek }) => {
       homework: [
         {
           prefix: "Read:",
-          title:
-            'von Uexküll, "A Stroll Through the Worlds of Animals and Men" (1934)',
+          title: 'Debord, "Theory of the Dérive"',
         },
         {
           prefix: "Play:",
@@ -293,9 +289,9 @@ const WeeklySchedule = ({ targetWeek }) => {
     },
     {
       number: 8,
-      title: "Semiotic Play – Can we play without any enemy?",
+      title: "Affective Play – Can we play without any enemy?",
       content: [
-        "Interspecies semiotics. Shared Umwelt. Cross-world communication.",
+        "Drifting. Psychogeography.",
         "Friendship. Non-verbal cooperation. Emergent companionship.",
       ],
       due: ["Multiplayer Path: Moodboard Presentation 3"],
