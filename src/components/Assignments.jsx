@@ -65,9 +65,8 @@ const Assignments = ({ initialView }) => {
 
           <p className="assignment-description">Submission Schedule:</p>
           <ul className="terminal-list">
-            <li>Entry 1: Due Week 3 (Friday April 18)</li>
-            <li>Entry 2: Due Week 6 (Friday May 9)</li>
-            <li>Entry 3: Due Week 9 (Friday May 30)</li>
+            <li>Entry 1: Due Week 3 (Sunday April 20)</li>
+            <li>Entry 2: Due Week 7 (Sunday May 11)</li>
           </ul>
 
           <p className="assignment-description">Requirements:</p>
@@ -85,7 +84,8 @@ const Assignments = ({ initialView }) => {
         <h4>Gamer Portfolio (Due Finals Week, Tuesday June 10)</h4>
         <div className="assignment-details">
           <ul className="terminal-list">
-            <li>Revise your three game logs into a cohesive portfolio</li>
+            <li>Optional: Add one game log</li>
+            <li>Revise your game logs into a cohesive portfolio</li>
             <li>Add a 200-word introduction (or 1-2 minute video intro)</li>
             <li>Discuss how your understanding of games has evolved</li>
             <li>Identify key assumptions challenged and perspectives gained</li>
@@ -108,9 +108,8 @@ const Assignments = ({ initialView }) => {
 
           <p className="assignment-description">Submission Schedule:</p>
           <ul className="terminal-list">
-            <li>Team 1: Present Week 4 in class</li>
-            <li>Team 2: Present Week 6 in class</li>
-            <li>Team 3: Present Week 8 in class</li>
+            <li>Submission 1: Due Week 3 (Sunday April 20))</li>
+            <li>Submission 2: Due Week 7 (Sunday May 11)</li>
           </ul>
 
           <p className="assignment-description">Content Requirements:</p>
@@ -123,6 +122,7 @@ const Assignments = ({ initialView }) => {
 
           <p className="assignment-description">Presentation Format:</p>
           <ul className="terminal-list">
+            <li>Your choice of week</li>
             <li>5-minute informal presentation</li>
             <li>5-minute follow-up questions and discussion</li>
           </ul>
@@ -143,6 +143,7 @@ const Assignments = ({ initialView }) => {
 
           <p className="assignment-description">Components:</p>
           <ul className="terminal-list">
+            <li>Your choice of game</li>
             <li>Live gameplay demonstration (optional)</li>
             <li>Interactive audience elements</li>
             <li>Original creative content</li>

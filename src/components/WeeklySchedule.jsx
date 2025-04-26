@@ -169,22 +169,27 @@ const WeeklySchedule = ({ targetWeek }) => {
         },
       ],
       moreResources: [
-        // {
-        //   title: "'Dear Esther' (2012)",
-        //   url: "https://store.steampowered.com/app/203810/Dear_Esther/",
-        // },
-        // {
-        //   title: "'Gone Home' (2013)",
-        //   url: "https://store.steampowered.com/app/232430/Gone_Home/",
-        // },
-        // {
-        //   title: "'Proteus' (2013)",
-        //   url: "https://twistedtree.itch.io/proteus",
-        // },
-        // {
-        //   title: "'What Remains of Edith Finch'(2017)",
-        //   url: "https://store.steampowered.com/app/501300/What_Remains_of_Edith_Finch/",
-        // },
+        {
+          title:
+            "Fizek, Sonia. Playing at a Distance: Borderlands of Video Game Aesthetics.",
+          url: "https://direct.mit.edu/books/oa-monograph/5473/Playing-at-a-DistanceBorderlands-of-Video-Game",
+        },
+        {
+          title: "'Dear Esther' (2012)",
+          url: "https://store.steampowered.com/app/203810/Dear_Esther/",
+        },
+        {
+          title: "'Gone Home' (2013)",
+          url: "https://store.steampowered.com/app/232430/Gone_Home/",
+        },
+        {
+          title: "'Proteus' (2013)",
+          url: "https://twistedtree.itch.io/proteus",
+        },
+        {
+          title: "'What Remains of Edith Finch'(2017)",
+          url: "https://store.steampowered.com/app/501300/What_Remains_of_Edith_Finch/",
+        },
       ],
     },
     {
