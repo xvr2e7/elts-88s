@@ -211,10 +211,23 @@ const WeeklySchedule = ({ targetWeek }) => {
         },
       ],
       moreResources: [
-        // {
-        //   title: "'The Stanley Parable' (2013)",
-        //   url: "https://store.steampowered.com/app/221910/The_Stanley_Parable/",
-        // },
+        {
+          title:
+            "Frasca, Gonzalo. Simulation versus Narrative: Introduction to Ludology.",
+          url: "https://ludology.typepad.com/weblog/articles/vgt_final.pdf",
+        },
+        {
+          title: "Lowood and Nitsche, The Machinima Reader.",
+          url: "https://mitpress.mit.edu/9780262015332/the-machinima-reader/",
+        },
+        {
+          title: "'The Stanley Parable' (2013)",
+          url: "https://store.steampowered.com/app/221910/The_Stanley_Parable/",
+        },
+        {
+          title: "'Half-life: Alyx' (2020)",
+          url: "https://store.steampowered.com/app/546560/HalfLife_Alyx/",
+        },
       ],
     },
     {
@@ -224,10 +237,7 @@ const WeeklySchedule = ({ targetWeek }) => {
         "Aesthetic negation. Visual protest. Counter-cultural resistance.",
         "Autonomous form. Hacker culture. Alternative spaces.",
       ],
-      due: [
-        "Solo Path: Game Log Entry 2",
-        "Multiplayer Path: Moodboard Presentation 2",
-      ],
+      due: ["Mid-term survey"],
       homework: [
         {
           prefix: "Reading:",
