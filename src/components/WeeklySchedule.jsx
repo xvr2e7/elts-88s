@@ -250,14 +250,26 @@ const WeeklySchedule = ({ targetWeek }) => {
         },
       ],
       moreResources: [
-        // {
-        //   title: "'Papers, Please' (2013) or 'This War of Mine' (2014)",
-        //   url: "https://store.steampowered.com/app/239030/Papers_Please/",
-        // },
-        // {
-        //   title: "Galloway, 'Gaming: Essays on Algorithmic Culture'",
-        //   url: "https://www.upress.umn.edu/book-division/books/gaming",
-        // },
+        {
+          title: "Galloway, Alexander. Gaming: Essays on Algorithmic Culture.",
+          url: "https://www.upress.umn.edu/book-division/books/gaming",
+        },
+        {
+          title: "Wark, McKenzie. A Hacker Manifesto.",
+          url: "https://www.hup.harvard.edu/books/9780674015432",
+        },
+        {
+          title: "'Gris' (2018)",
+          url: "https://store.steampowered.com/app/683320/GRIS/",
+        },
+        {
+          title: "'Sludge Life' (2021)",
+          url: "https://store.steampowered.com/app/1144770/SLUDGE_LIFE/",
+        },
+        {
+          title: "Whole Earth Index",
+          url: "https://wholeearth.info/",
+        },
       ],
     },
     {

@@ -66,7 +66,7 @@ const Assignments = ({ initialView }) => {
           <p className="assignment-description">Submission Schedule:</p>
           <ul className="terminal-list">
             <li>Entry 1: Due Week 3 (Sunday April 20)</li>
-            <li>Entry 2: Due Week 7 (Sunday May 11)</li>
+            <li>Entry 2: Due Week 7 (Sunday May 18)</li>
           </ul>
 
           <p className="assignment-description">Requirements:</p>
