@@ -289,29 +289,21 @@ const WeeklySchedule = ({ targetWeek }) => {
           title: "Journey (2012).",
           url: "https://store.steampowered.com/app/638230/Journey/",
         },
-        {
-          prefix: "Watch:",
-          title: "Chen's GDC Talk – Designing Journey (2013)",
-          url: "https://archive.org/details/GDC2013Chen",
-        },
       ],
       moreResources: [
-        // {
-        //   title: "'Progress Quest' or 'Kittens Game' (idle games)",
-        //   url: "https://kittensgame.com/web/",
-        // },
-        // {
-        //   title: "Sianne Ngai on 'Stuplimity'",
-        //   url: "https://content.ucpress.edu/chapters/10810.ch01.pdf",
-        // },
-        // {
-        //   title: "Conway's Game of Life simulations",
-        //   url: "https://conwaylife.com/",
-        // },
-        // {
-        //   title: "AI art generators and computational creativity",
-        //   url: "https://makeavideo.studio/",
-        // },
+        {
+          title:
+            "Ngai, Sianne. Stuplimity:  Shock and Boredom in Twentieth-Century Aesthetics",
+          url: "https://muse.jhu.edu/article/27722/summary",
+        },
+        {
+          title: "Conway's Game of Life simulations",
+          url: "https://conwaylife.com/",
+        },
+        {
+          title: "Progress Quest (2002)",
+          url: "http://progressquest.com/",
+        },
       ],
     },
     {
@@ -334,6 +326,10 @@ const WeeklySchedule = ({ targetWeek }) => {
         },
       ],
       moreResources: [
+        {
+          title: "Jenova Chen's GDC Talk – Designing Journey (2013)",
+          url: "https://archive.org/details/GDC2013Chen",
+        },
         // {
         //   title: "'Abzû' (2016) or 'Flower' (2009)",
         //   url: "https://store.steampowered.com/app/384190/ABZU/",
