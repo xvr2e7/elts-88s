@@ -293,7 +293,7 @@ const WeeklySchedule = ({ targetWeek }) => {
       moreResources: [
         {
           title:
-            "Ngai, Sianne. Stuplimity:  Shock and Boredom in Twentieth-Century Aesthetics",
+            "Ngai, Sianne. Stuplimity:  Shock and Boredom in Twentieth-Century Aesthetics.",
           url: "https://muse.jhu.edu/article/27722/summary",
         },
         {
@@ -313,54 +313,34 @@ const WeeklySchedule = ({ targetWeek }) => {
         "Drifting. Psychogeography.",
         "Friendship. Non-verbal cooperation. Emergent companionship.",
       ],
-      due: ["Multiplayer Path: Moodboard Presentation 3"],
-      homework: [
-        {
-          prefix: "Read:",
-          title: 'Virilio, "Speed and Politics: An Essay on Dromology" (1986)',
-        },
-        {
-          prefix: "Play:",
-          title: "Getting Over It with Bennett Foddy (2017)",
-          url: "https://store.steampowered.com/app/240720/Getting_Over_It_with_Bennett_Foddy/",
-        },
+      due: [
+        "Solo Path: Game Log Entry 2",
+        "Multiplayer Path: Moodboard 2 Submission",
       ],
       moreResources: [
+        {
+          title:
+            "Bennett, Jane. Vibrant Matter: A Political Ecology of Things.",
+          url: "https://www.dukeupress.edu/vibrant-matter",
+        },
+        {
+          title: "'Abzû' (2016)",
+          url: "https://store.steampowered.com/app/384190/ABZU/",
+        },
+        {
+          title: "'Sky: Children of the Light' (2019)",
+          url: "https://thatgamecompany.com/sky/",
+        },
         {
           title: "Jenova Chen's GDC Talk – Designing Journey (2013)",
           url: "https://archive.org/details/GDC2013Chen",
         },
-        // {
-        //   title: "'Abzû' (2016) or 'Flower' (2009)",
-        //   url: "https://store.steampowered.com/app/384190/ABZU/",
-        // },
-        // {
-        //   title: "Jane Bennett, 'Vibrant Matter' (excerpts)",
-        //   url: "https://www.dukeupress.edu/vibrant-matter",
-        // },
-        // {
-        //   title: "'Sky: Children of the Light'",
-        //   url: "https://thatgamecompany.com/sky/",
-        // },
       ],
     },
     {
       number: 9,
-      title: "Automatic Play – Can we play without thinking?",
-      content: [
-        "Dromological violence. Muscle memory. Technical mastery.",
-        "Tool-assisted speedrun. Frame-perfect execution. Cheating.",
-      ],
-      due: [
-        "Solo Path: Game Log Entry 3",
-        "Multiplayer Path: Final Presentation (Part 1)",
-      ],
-      homework: [
-        {
-          prefix: "Read:",
-          title: 'Heidegger, "The Question Concerning Technology" (1954)',
-        },
-      ],
+      title: "Final Presentations",
+      content: ["Final Presentations"],
       moreResources: [
         // {
         //   title: "GDQ (Games Done Quick) speedrun events",
@@ -378,13 +358,10 @@ const WeeklySchedule = ({ targetWeek }) => {
     },
     {
       number: 10,
-      title: "Infinite Play… – Can we play without dying?",
-      content: [
-        "Being-toward-death. Temporal recursion. Algorithmic finitude.",
-        "Coda, and Farewell.",
-      ],
+      title: "Coda",
+      content: ["Let's Play:"],
       due: [
-        "Multiplayer Path: Final Presentation (Part 2)",
+        "Multiplayer Path: Final Presentation Materials",
         "Solo Path: Gamer Portfolio",
       ],
       moreResources: [
